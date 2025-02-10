@@ -1,0 +1,71 @@
+.sectionContainer {
+    background-image: url(./maxresdefault.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* padding must be negated in img container */
+    padding: 10rem;
+    gap: 3rem;
+}
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    
+  }
+  
+   /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+   @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } 
+  
+
+
+.imgContainer {
+    /* negate padding of sectionContainer */
+    padding: -10rem;
+}
+
+/* .sectionImg {
+
+} */
+
+.sectionTitle {
+    font-size: 2.25 rem;
+    font-weight: bolder;
+
+}
+
+.paragraph {
+    width: 60%;
+  white-space: pre;
+  text-wrap: wrap;
+  font-size: 1.5rem;
+  text-align: justify;
+  position: relative;
+  z-index: 5;
+  background-color: var(--trans-black);
+  padding: 1rem;
+  box-shadow: 0 0 16px 16px var(--trans-black);
+  border-radius: 16px;
+
+}
+
+/* .paragraph::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 30%;
+    z-index: 0;
+} */

@@ -1,0 +1,74 @@
+.sectionContainer {
+    background-image: url(./maxresdefault.jpg);
+    /* Need Tall panorama */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    
+  }
+  
+   /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+   @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } 
+  
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5rem;
+    width: 80%;
+    margin: auto;
+}
+
+/* .container > * {
+    background-color: var(--tertiary-color);
+} */
+
+.title {
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2rem;
+    font-style: italic;
+}
+
+.quickResizer {
+    font-size: 1.5rem;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+}
+
+/* .sectionContainer {
+    box-shadow: 0 0 64px 100px var(--primary-color) inset;
+    position: relative;
+
+
+}
+
+.sectionContainer::after {
+    box-shadow: 0 0 32px 32px var(--primary-color);
+    position: absolute;
+    content: '';
+    height: 100%;
+    top: 0;
+    width: 100%;
+} */
+
+.ctaModule {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    margin-top: -3rem;
+}

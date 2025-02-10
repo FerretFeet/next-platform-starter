@@ -1,0 +1,27 @@
+
+.linkButton {
+    padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+    border-radius: 16px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-weight: bold;
+    
+}
+
+.linkButton:hover {
+    text-decoration: underline;
+    /* Following lines cause button to resize, messing with ui. set fixed width when using module */
+    /* font-style: italic;
+    font-size: 1.05em; */
+}
+
+.linkButton div {
+    transition: transform 0.14s ease;
+  }
+  
+  .linkButton:hover div {
+    transform: perspective(100px) scale(1.05);
+  }
+  .linkButton:active div {
+    transform: perspective(100px) scale(1.08);
+  }

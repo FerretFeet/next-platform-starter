@@ -1,0 +1,58 @@
+.simpleIconCard {
+    background-color: var(--tertiary-color);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    width: clamp(288px, 25rem, 440px);
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    /* padding: 2rem; */
+}
+
+.simpleIconCard::after {
+    box-shadow: 0 0 8px 4px var(--black) inset;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+.iconContainer {
+    height: fit-content;
+    max-height: 200px;
+    width: 100%;
+
+}
+
+.iconImg {
+ object-fit:cover;
+ height: 200px;
+ width: 100%;
+
+
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.description {
+ text-align: center;
+ margin: 2.5rem;
+ margin-bottom: 4rem;
+ font-size: 1.25rem;
+ font-style: italic;
+}

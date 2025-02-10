@@ -1,0 +1,45 @@
+.simpleIconCard {
+    padding: 2rem;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-width: 288px;
+    max-width: 352px;
+    min-height: calc(288px*1.5);
+    max-height: calc(352px*1.5);
+    height: fit-content;
+    align-items: center;
+    margin: 2rem;
+    border-radius: 16px;
+}
+
+.iconContainer {
+    width: clamp(32px, 6rem, 96px);
+    height: clamp(32px, 6rem, 96px);
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+
+.iconImg {
+    border-radius: 50%;
+    object-fit: contain;
+
+}
+
+.title {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: var(--tertiary-color);
+    font-size: 2rem;
+}
+
+.description {
+ text-align: center;
+ font-size: 1.25rem;
+}
