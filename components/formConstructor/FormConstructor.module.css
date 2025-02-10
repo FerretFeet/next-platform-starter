@@ -1,0 +1,97 @@
+.mainCont {
+    width: fit-content;
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    border: 8px solid var(--primary-color);
+    border-radius: 8px;
+    background-image: url(./grassclippings.png);
+    background-size: contain;
+    background-repeat: repeat;
+    /* color: var(--white); */
+}
+
+.formTitleTxt {
+    text-align: center;
+    font-weight: bold;
+    width: fit-content;
+    justify-self: center;
+}
+
+.formContainer {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    width: fit-content;
+    margin: 5rem;
+    gap: 2.5rem;
+}
+
+
+
+/* .createdCheckBoxCont {
+CLASS NOT APPEARING IN HTML?
+} */
+
+/* .legendStyler {
+
+} */
+
+.checkLabelCont {
+    background-color: var(--white);
+}
+
+.checkLabelCont > * {
+    font-size: 1.18rem;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.createdLabelInputCont {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: clamp(15rem, 15%, 60rem);
+}
+
+.createdLabelInputCont > input, .createdLabelInputCont > textarea {
+    border: 1px solid var(--black);
+    border-radius: 16px;
+    padding: 0.5rem;
+
+}
+
+.legendStyler, .createdLabelInputCont > label {
+    font-size: 1.25rem;
+    margin-left: -1.5rem;
+    /* margin-bottom: 1rem; */
+    background-color: var(--white);
+    width: fit-content;
+    padding: 0.5rem;
+
+}
+
+@media screen and (min-width: 100rem) {
+    .formContainer {
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+        width: fit-content;
+        column-gap: 10rem;
+        row-gap: 2.5rem;
+
+    }
+    
+}
+
+.createdLabelInputCont > textarea {
+    width: 30rem;
+    height: 5rem;
+    resize: none;
+}

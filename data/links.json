@@ -3,6 +3,6 @@
     "Contact Us": "/contact",
     "Phone": "tel:+15015103469",
     "Get An Estimate": "/FIX-THESE-ROUTES",
-    "Residential": "app/routes/service.residential/route.tsx"
+    "Services": "/services"
 
 }

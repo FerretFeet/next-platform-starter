@@ -1,4 +1,3 @@
-import Header from "components/header/Header";
 import Hero from "components/hero/Hero";
 import LinkButton from "components/link_button/LinkButton";
 import ServiceArea from "components/serviceArea/ServiceArea";
@@ -25,8 +24,7 @@ import testimonialData from "data/testimonials.json"
 
 export default function Page() {
     const quoteFormLink: DataString = {key: "Get An Estimate", value: links["Get An Estimate"]};
-    const contactLink: DataString = {key: "Contact Us", value: links["Contact Us"]};
-    const contactPhone: DataString = {key: "Phone", value: links.Phone}
+
   
   
     const MyCTAModule = () => (
@@ -39,8 +37,6 @@ export default function Page() {
   
     return (
       <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-        <Header quoteFormLink={quoteFormLink} contactLink={contactLink} contactPhone={contactPhone} logoPath="/imgs/icons/logo.png"
-          navLinks={links} excludedNavLinkKeys={["Get An Estimate", "Contact Us", "Phone"]}/>
           <Hero h1text={heroTxt.h1text} description={heroTxt.description} CTAModule={MyCTAModule}/>
           <ValueProps cardInfoArr={valuePropData}/>
           <ServiceArea stateImg={{imgLink: 'public/imgs/icons/map1.png', imgAltText: 'The State of Arkansas'}} serviceAreas={serviceAreas} CTAModule={MyCTAModule}/>
