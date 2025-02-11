@@ -11,35 +11,42 @@ import valuePropData from "data/valuePropositions.json";
 import serviceCardData from "data/serviceCards.json";
 import aboutUsTxt from "data/aboutUsTxt.json";
 import serviceAreas from "data/serviceAreas.json";
-import testimonialData from "data/testimonials.json"
+import testimonialData from "data/testimonials.json";
 
-import styles from "./page.module.css"
+import styles from "./page.module.css";
 import { CTAModule } from "components/CTAModule";
 import FormConstructor from "components/formConstructor/FormConstructor";
 
-
-
-
-
-
-
 export default function Page() {
-
-  
-    
-  
-    return (
-      <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-          <Hero h1text={heroTxt.h1text} description={heroTxt.description} CTAModule={CTAModule}/>
-          <ValueProps cardInfoArr={valuePropData}/>
-          <ServiceArea stateImg={{imgLink: 'public/imgs/icons/map1.png', imgAltText: 'The State of Arkansas'}} serviceAreas={serviceAreas} CTAModule={CTAModule}/>
-          <ServiceCards cardInfoArr={serviceCardData} CTAModule={CTAModule}/>
-          <div className={styles.testimonialGradient}>
-            <Testimonials cardInfoArr={testimonialData} />
-          </div>
-          <FormConstructor />
-          <SimpleIHP imgLink={{imgLink: '/', imgAltText: 'a photo'}} sectionTitle= 'About Us' pText={aboutUsTxt.paragraphText} />
+  return (
+    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+      <Hero
+        h1text={heroTxt.h1text}
+        description={heroTxt.description}
+        CTAModule={CTAModule}
+      />
+      <ValueProps cardInfoArr={valuePropData} />
+      <ServiceArea
+        stateImg={{
+          imgLink: "public/imgs/icons/map1.png",
+          imgAltText: "The State of Arkansas",
+        }}
+        serviceAreas={serviceAreas}
+        CTAModule={CTAModule}
+      />
+      <ServiceCards
+        cardInfoArr={serviceCardData}
+        CTAModule={CTAModule}
+      />
+      <div className={styles.testimonialGradient}>
+        <Testimonials cardInfoArr={testimonialData} />
       </div>
-    );
+      <FormConstructor />
+      <SimpleIHP
+        imgLink={{ imgLink: "/", imgAltText: "a photo" }}
+        sectionTitle="About Us"
+        pText={aboutUsTxt.paragraphText}
+      />
+    </div>
+  );
 }
-

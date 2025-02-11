@@ -1,22 +1,24 @@
 .container {
-    background-image: linear-gradient(var(--black), 1%, var(--primary-color), 70%, var(--tertiary-color) 85%);
-    padding: 1rem;
-    padding-left: 10%;
-    padding-right: 10%;
-    color: var(--white);
-
-
+  background-image: linear-gradient(
+    var(--black),
+    1%,
+    var(--primary-color),
+    70%,
+    var(--tertiary-color) 85%
+  );
+  padding: 1rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: var(--white);
 }
 
 .contactBanner {
-    display: flex;
-    flex-direction: row;
-    font-size: 1.5rem;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-
-
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
 }
 
 /* .contactBanner > div {
@@ -34,29 +36,27 @@
 } */
 
 .logoNav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 2rem;
-    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2rem;
 }
 
 .logoNav > nav {
-    margin-left: 5rem;
+  margin-left: 5rem;
 }
 
 .logoNav > nav > ul {
-    display: flex;
-    gap: 1.5rem;
-
+  display: flex;
+  gap: 1.5rem;
 }
 
 .logo {
-    width: clamp(160px, 12rem, 238px);
+  width: clamp(160px, 12rem, 238px);
 }
 
 @media screen and (max-width: 700px) {
-    .contactBanner {
-        flex-direction: column;
-    }
+  .contactBanner {
+    flex-direction: column;
+  }
 }

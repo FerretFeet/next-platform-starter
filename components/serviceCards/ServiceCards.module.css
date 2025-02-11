@@ -1,32 +1,30 @@
 .sectionContainer {
-    background-image: url(./maxresdefault.jpg);
-    /* Need Tall panorama */
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(./maxresdefault.jpg);
+  /* Need Tall panorama */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .parallax {
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
   }
-  
-   /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-   @media only screen and (max-device-width: 1366px) {
-    .parallax {
-      background-attachment: scroll;
-    }
-  } 
-  
+}
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 5rem;
-    width: 80%;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem;
+  width: 80%;
+  margin: auto;
 }
 
 /* .container > * {
@@ -34,17 +32,17 @@
 } */
 
 .title {
-    color: var(--secondary-color);
-    font-weight: bold;
-    text-align: center;
-    padding-top: 2rem;
-    font-style: italic;
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2rem;
+  font-style: italic;
 }
 
 .quickResizer {
-    font-size: 1.5rem;
-    margin-top: -2rem;
-    margin-bottom: -2rem;
+  font-size: 1.5rem;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
 }
 
 /* .sectionContainer {
@@ -64,11 +62,11 @@
 } */
 
 .ctaModule {
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
-    font-size: 2rem;
-    margin-top: -3rem;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  font-size: 2rem;
+  margin-top: -3rem;
 }

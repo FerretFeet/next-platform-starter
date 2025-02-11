@@ -1,34 +1,37 @@
 {
-    "name": "next-netlify-platform-starter",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint"
-    },
-    "dependencies": {
-        "@netlify/blobs": "^8.1.0",
-        "blobshape": "^1.0.0",
-        "bright": "^0.8.5",
-        "markdown-to-jsx": "^7.4.5",
-        "next": "15.1.6",
-        "react": "18.3.1",
-        "react-dom": "18.3.1",
-        "unique-names-generator": "^4.7.1"
-    },
-    "devDependencies": {
-        "@types/node": "22.13.1",
-        "@types/react": "^18.2.20",
-        "@types/react-dom": "^18.2.7",
-        "@typescript-eslint/eslint-plugin": "^6.7.4",
-        "autoprefixer": "^10.4.18",
-        "daisyui": "^4.12.8",
-        "eslint": "8.57.1",
-        "eslint-config-next": "15.1.6",
-        "postcss": "^8.4.36",
-        "tailwindcss": "^3.4.1",
-        "typescript": "^5.1.6"
-    }
+  "name": "next-netlify-platform-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint --fix --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint ."
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0",
+    "blobshape": "^1.0.0",
+    "bright": "^0.8.5",
+    "markdown-to-jsx": "^7.4.5",
+    "next": "15.1.6",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "unique-names-generator": "^4.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.1",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "autoprefixer": "^10.4.18",
+    "daisyui": "^4.12.8",
+    "eslint": "8.57.1",
+    "eslint-config-next": "15.1.6",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "postcss": "^8.4.36",
+    "prettier": "^3.5.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.1.6"
+  }
 }
