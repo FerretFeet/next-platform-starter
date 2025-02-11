@@ -11,7 +11,7 @@ export const metadata = {
         default: 'Netlify Starter'
     }
 };
-
+//@ts-expect-error don't want to type this rn
 export default function RootLayout({ children }) {
     const quoteFormLink: DataString = {key: "Get An Estimate", value: links["Get An Estimate"]};
     const contactLink: DataString = {key: "Contact Us", value: links["Contact Us"]};

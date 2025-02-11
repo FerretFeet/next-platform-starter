@@ -46,7 +46,7 @@ return (
             ) : (<></>)}
 
         <div className={styles.logoNav}>
-            <img src={logoPath} alt="logo" className={styles.logo} />
+        <Link href={"/"}><img src={logoPath} alt="logo" className={styles.logo} /></Link>
             {createLinksAndNav(navLinks, excludedNavLinkKeys)}
         </div>
     </section>

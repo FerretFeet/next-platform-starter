@@ -4,7 +4,7 @@ import ImgNText from "data/__interfaces"
 
 export default function FullsizeCard({title, description, iconLink} : {title: string, description: string, iconLink: ImgNText}) {
     return (
-        <div className={styles.fullsizeCard}>
+        <div className={`${styles.fullsizeCard} ${styles.gridColumns2}`}>
             <div className={styles.imgContainer}>
                 {/* svg or img */}
                 <img src={iconLink.imgLink} alt={iconLink.imgAltText} className={styles.iconImg} />
