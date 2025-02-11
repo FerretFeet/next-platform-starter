@@ -4,11 +4,9 @@ import styles from "./ServiceArea.module.css";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function ServiceArea({
-  stateImg,
   serviceAreas,
   CTAModule,
 }: {
-  stateImg: ImgNText;
   serviceAreas: Array<string>;
   CTAModule: () => ReactElement;
 }) {

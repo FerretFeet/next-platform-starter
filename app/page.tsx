@@ -27,10 +27,6 @@ export default function Page() {
       />
       <ValueProps cardInfoArr={valuePropData} />
       <ServiceArea
-        stateImg={{
-          imgLink: "public/imgs/icons/map1.png",
-          imgAltText: "The State of Arkansas",
-        }}
         serviceAreas={serviceAreas}
         CTAModule={CTAModule}
       />
