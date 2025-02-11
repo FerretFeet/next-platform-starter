@@ -1,4 +1,3 @@
-import ImgNText from "data/__interfaces";
 import React, { ReactElement } from "react";
 import styles from "./ServiceArea.module.css";
 
