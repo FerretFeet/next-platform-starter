@@ -265,7 +265,10 @@ export default function FormConstructor() {
   }
 
   return (
-    <div className={styles.mainCont}>
+    <section
+      id="QuoteForm"
+      className={styles.mainCont}
+    >
       <h4 className={styles.formTitleTxt}>Get A Free Estimate</h4>
       <form
         name="estimate-form"
@@ -286,6 +289,6 @@ export default function FormConstructor() {
         {createLabelInput(formTextFields[7])}
         <button type="submit">Submit</button>
       </form>
-    </div>
+    </section>
   );
 }

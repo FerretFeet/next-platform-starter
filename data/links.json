@@ -1,8 +1,6 @@
-
 {
-    "Contact Us": "/contact",
-    "Phone": "tel:+15015103469",
-    "Get An Estimate": "/FIX-THESE-ROUTES",
-    "Services": "/services"
-
+  "Contact Us": "/contact",
+  "Phone": "tel:+15015103469",
+  "Get An Estimate": "/#QuoteForm",
+  "Services": "/services"
 }
