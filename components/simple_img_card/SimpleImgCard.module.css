@@ -3,11 +3,11 @@
     color: var(--white);
     display: flex;
     flex-direction: column;
-    width: clamp(288px, 25rem, 440px);
+    width: clamp(288px, 25rem, 340px);
     height: fit-content;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
+    margin: 1.5rem;
     border-radius: 16px;
     overflow: hidden;
     position: relative;

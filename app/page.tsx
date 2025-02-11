@@ -15,6 +15,7 @@ import testimonialData from "data/testimonials.json"
 
 import styles from "./page.module.css"
 import { CTAModule } from "components/CTAModule";
+import FormConstructor from "components/formConstructor/FormConstructor";
 
 
 
@@ -36,8 +37,8 @@ export default function Page() {
           <div className={styles.testimonialGradient}>
             <Testimonials cardInfoArr={testimonialData} />
           </div>
+          <FormConstructor />
           <SimpleIHP imgLink={{imgLink: '/', imgAltText: 'a photo'}} sectionTitle= 'About Us' pText={aboutUsTxt.paragraphText} />
-          {/* <FormConstructor /> */}
       </div>
     );
 }

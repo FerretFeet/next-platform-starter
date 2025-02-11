@@ -29,16 +29,20 @@ export interface Value_Text {
 }
 
 interface FormState {
-    name: string;
+    fname: string;
+    lname: string;
     phone: string;
+    address: string;
+    city: string;
+    zipcode: string;
     email: string;
-    subject: string;
-    message: string;
+    services: string;
+    additionalNotes: string;
   }
 
 const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:5173"
 
-
+//@ts-expect-error don't want to type rn
 export async function formAction({ request }) {
     // REQUIRES WORK
     // 
@@ -59,6 +63,9 @@ export async function formAction({ request }) {
         phone: String(formData.get("phone")),
         email: String(formData.get("email")),
         address: String(formData.get("address")),
+        city: String(formData.get("city")),
+        zipcode: String(formData.get("zipcode")),
+
 
         subject: String(formData.get("services")),
         additionalNotes: String(formData.get("additionalNotes")),
@@ -73,6 +80,19 @@ export default function FormConstructor() {
     // Form Inputs created from formCheckBoxFields and formTextFields
     // FormState, formAction(), and useState all must match whatever inputs you want to create.
     // Modify this function's return statement to change form rendering.
+
+    const [state, setState] = useState<FormState>({
+      fname: '',
+      lname: '',
+
+      phone: '',
+      email: '',
+      address: '',
+      city: '',
+      zipcode: '',
+      services: '',
+      additionalNotes: '',
+  });
 
     const formCheckboxFields: CheckboxInput[] = [
         {
@@ -95,7 +115,7 @@ export default function FormConstructor() {
           labelText: 'First Name',
           inputType: 'text',
           placeHolder: 'First Name',
-          value: '', 
+          value: state.fname, 
           changeHandler: onChangeHandler,
           required: true,
         },
@@ -104,7 +124,7 @@ export default function FormConstructor() {
           labelText: 'Last Name',
           inputType: 'text',
           placeHolder: 'Last Name',
-          value: '', 
+          value: state.lname, 
           changeHandler: onChangeHandler,
           required: true,
         },
@@ -113,7 +133,7 @@ export default function FormConstructor() {
           labelText: 'Phone Number',
           inputType: 'tel',
           placeHolder: '555-123-4567',
-          value: '', 
+          value: state.phone, 
           changeHandler: onChangeHandler,
           required: true,
         },
@@ -122,7 +142,7 @@ export default function FormConstructor() {
           labelText: 'Email Address',
           inputType: 'email',
           placeHolder: 'yourname@email.com',
-          value: '', 
+          value: state.email, 
           changeHandler: onChangeHandler,
           required: true,
         },
@@ -131,7 +151,25 @@ export default function FormConstructor() {
           labelText: 'Address',
           inputType: 'text',
           placeHolder: '123 Elm St.',
-          value: '', 
+          value: state.address, 
+          changeHandler: onChangeHandler,
+          required: true,
+        },
+        {
+          formField: 'city',
+          labelText: 'City',
+          inputType: 'text',
+          placeHolder: '',
+          value: state.city, 
+          changeHandler: onChangeHandler,
+          required: true,
+        },
+        {
+          formField: 'zipcode',
+          labelText: 'Zipcode',
+          inputType: 'text',
+          placeHolder: '',
+          value: state.zipcode,
           changeHandler: onChangeHandler,
           required: true,
         },
@@ -140,23 +178,19 @@ export default function FormConstructor() {
           labelText: 'Additional Notes',
           inputType: 'textarea',
           placeHolder: 'Enter Additional Notes or Questions',
-          value: '', 
+          value: state.additionalNotes, 
           changeHandler: onChangeHandler,
           required: false,
         },
       ];
 
-    const [state, setState] = useState<FormState>({
-        name: '',
-        phone: '',
-        email: '',
-        subject: '',
-        message: '',
-    });
+
 
     function onChangeHandler(event: React.ChangeEvent<HTMLInputElement>) {
         const { name, value }: {name:string, value:string} = event.target
         console.log(value)
+        console.log(name)
+
         setState((prevState) => ({
           ...prevState,
           [name]: value,
@@ -237,8 +271,11 @@ export default function FormConstructor() {
                 {createLabelInput(formTextFields[2])}
                 {createLabelInput(formTextFields[3])}
                 {createLabelInput(formTextFields[4])}
-                {createCheckboxLabelInput(formCheckboxFields[0])}
                 {createLabelInput(formTextFields[5])}
+                {createLabelInput(formTextFields[6])}
+
+                {createCheckboxLabelInput(formCheckboxFields[0])}
+                {createLabelInput(formTextFields[7])}
                 <button type="submit">Submit</button>
             </form>
         </div>
