@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import createLinksAndNav from "components/createLinksAndNav";
 import LinkButton from "components/link_button/LinkButton";
 import { DataString } from "data/__interfaces";
