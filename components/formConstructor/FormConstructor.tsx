@@ -1,7 +1,12 @@
 "use client";
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { ChangeEventHandler, useState } from "react";
+import React, {
+  ChangeEventHandler,
+  FormEvent,
+  ReactEventHandler,
+  useState,
+} from "react";
 import styles from "./FormConstructor.module.css";
 import { redirect } from "next/navigation";
 
@@ -41,37 +46,52 @@ interface FormState {
 
 const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:5173";
 
-//@ts-expect-error don't want to type rn
-export async function formAction({ request }) {
-  // REQUIRES WORK
-  //
-  // ###############
-  //
-  // REQUIRES WORK
-  const formData = await request.formData();
-  console.log(baseUrl);
-  const response = await fetch(`${baseUrl}`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
-    body: new URLSearchParams({
-      "form-name": "estimateForm v1",
-      fname: String(formData.get("fname")),
-      lname: String(formData.get("lname")),
-      phone: String(formData.get("phone")),
-      email: String(formData.get("email")),
-      address: String(formData.get("address")),
-      city: String(formData.get("city")),
-      zipcode: String(formData.get("zipcode")),
+// export async function formAction({ request }) {
+//   // REQUIRES WORK
+//   //
+//   // ###############
+//   //
+//   // REQUIRES WORK
+//   const formData = await request.formData();
+//   console.log(baseUrl);
+//   const response = await fetch(`${baseUrl}`, {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/x-www-form-urlencoded",
+//     },
+//     body: new URLSearchParams({
+//       "form-name": "estimateForm v1",
+//       fname: String(formData.get("fname")),
+//       lname: String(formData.get("lname")),
+//       phone: String(formData.get("phone")),
+//       email: String(formData.get("email")),
+//       address: String(formData.get("address")),
+//       city: String(formData.get("city")),
+//       zipcode: String(formData.get("zipcode")),
 
-      subject: String(formData.get("services")),
-      additionalNotes: String(formData.get("additionalNotes")),
-    }).toString(),
-  });
-  console.log(response);
-  return redirect("/");
-}
+//       subject: String(formData.get("services")),
+//       additionalNotes: String(formData.get("additionalNotes")),
+//     }).toString(),
+//   });
+//   console.log(response);
+//   return redirect("/");
+// }
+
+const formAction = (e) => {
+  e.preventDefault();
+
+  const myForm = e.target;
+  const formData = new FormData(myForm);
+
+  fetch("/quoteform.html", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //@ts-expect-error dont wanna worry about it
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error));
+};
 
 // Allows for easier creation of form inputs
 export default function FormConstructor() {
@@ -271,12 +291,18 @@ export default function FormConstructor() {
     >
       <h4 className={styles.formTitleTxt}>Get A Free Estimate</h4>
       <form
-        name="estimate-form"
+        name="quoteForm"
         method="POST"
+        action="/quoteForm"
+        onSubmit={formAction}
         data-netlify="true"
-        // action="/"
         className={styles.formContainer}
       >
+        <input
+          type="hidden"
+          name="form-name"
+          value="quoteForm"
+        />
         {createLabelInput(formTextFields[0])}
         {createLabelInput(formTextFields[1])}
         {createLabelInput(formTextFields[2])}

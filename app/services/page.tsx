@@ -11,7 +11,6 @@ import styles from "./page.module.css";
 import testimonialData from "data/testimonials.json";
 import Testimonials from "components/testimonials/Testimonials";
 import { CTAModule } from "components/CTAModule";
-import FormConstructor from "components/formConstructor/FormConstructor";
 
 export default function Page() {
   return (
@@ -60,7 +59,7 @@ export default function Page() {
       {/* PUT QUOTE FORM HERE */}
 
       {/* <h2 className={styles.quoteformHeader}>Get Your Free Quote</h2> */}
-      <FormConstructor />
+      {/* <FormConstructor /> */}
 
       <h2 className={styles.testimonialHeader}>Testimonials</h2>
       <Testimonials cardInfoArr={testimonialData} />
