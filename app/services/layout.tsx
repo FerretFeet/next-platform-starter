@@ -1,10 +1,12 @@
 import Header from "components/header/Header";
-import "../styles/globals.css";
+import "../../styles/globals.css";
 import { DataString } from "data/__interfaces";
 import React from "react";
 
 import links from "data/links.json";
 import ContactBanner from "components/contactBanner/ContactBanner";
+
+// file exists just to edit title and data
 
 export const metadata = {
   title: {
@@ -29,16 +31,11 @@ export default function RootLayout({ children }) {
       data-theme="lofi"
     >
       <head>
-        <title>Fresh Greens Landscaping</title>
+        <title>Fresh Greens Services</title>
         <meta
           name="description"
-          content="Your local lawn care company in central Arkansas, we provide several lawn care services and small landscaping services.  Our weekly lawn maintenance includes lawn mowing, grass trimming, edging, and cleanup.  Currently offering same day lawn mowing, so get a free quote today"
+          content="Local lawn care services in Central Arkansas, including lawn mowing, trimming, edging, hedge trimming, pet waste cleanup, flowerbed maintenance, and leaf cleanup. Get a free quote today!"
         />
-        <meta
-          name="description"
-          content="Your trusted local lawn care company in Central Arkansas offering full lawn maintenance: lawn mowing, trimming, edging, and cleanup. Get same day lawn mowing and a free quote today!"
-        />
-
         <link
           rel="icon"
           href="/favicon.svg"
