@@ -20,30 +20,30 @@ export default function Header({
   navLinks: DataString;
   excludedNavLinkKeys: Array<string>;
 }) {
-  const trimPhoneLink = (phoneLink: string) => {
-    // Assume given tel:+{11-Digit-Number} && First digit not needed
-    // Add dashes between phone number section
-    if (!phoneLink) return ""; // Handle the case where phoneLink is null or undefineds
-    const slicedPhone = phoneLink.slice(6);
+  //   const trimPhoneLink = (phoneLink: string) => {
+  //     // Assume given tel:+{11-Digit-Number} && First digit not needed
+  //     // Add dashes between phone number section
+  //     if (!phoneLink) return ""; // Handle the case where phoneLink is null or undefineds
+  //     const slicedPhone = phoneLink.slice(6);
 
-    const areaCode = slicedPhone.slice(0, 3);
-    const prefix = slicedPhone.slice(3, 6);
-    const lineNumber = slicedPhone.slice(6);
+  //     const areaCode = slicedPhone.slice(0, 3);
+  //     const prefix = slicedPhone.slice(3, 6);
+  //     const lineNumber = slicedPhone.slice(6);
 
-    return `${areaCode}-${prefix}-${lineNumber}`;
-  };
+  //     return `${areaCode}-${prefix}-${lineNumber}`;
+  //   };
 
   // check to ensure entries not-null
-  const quoteFormLinkValues = quoteFormLink && Object.values(quoteFormLink);
-  const contactLinkValues = contactLink && Object.values(contactLink);
-  const contactPhoneValues = contactPhone && Object.values(contactPhone);
+  //   const quoteFormLinkValues = quoteFormLink && Object.values(quoteFormLink);
+  //   const contactLinkValues = contactLink && Object.values(contactLink);
+  //   const contactPhoneValues = contactPhone && Object.values(contactPhone);
 
   return (
     <section className={styles.container}>
       {/* <Link to={Object.values(quoteFormLink)[1]}>
                 <button type="button" className={styles.quoteBtn}>{Object.values(quoteFormLink)[0]}</button>
             </Link> */}
-      {quoteFormLinkValues && contactLinkValues && contactPhoneValues ? (
+      {/* {quoteFormLinkValues && contactLinkValues && contactPhoneValues ? (
         <div className={styles.contactBanner}>
           <LinkButton
             link={Object.values(quoteFormLink)[1]}
@@ -62,7 +62,7 @@ export default function Header({
         </div>
       ) : (
         <></>
-      )}
+      )} */}
 
       <div className={styles.logoNav}>
         <Link href={"/"}>

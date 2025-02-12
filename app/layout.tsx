@@ -4,6 +4,7 @@ import { DataString } from "data/__interfaces";
 import React from "react";
 
 import links from "data/links.json";
+import ContactBanner from "components/contactBanner/ContactBanner";
 
 export const metadata = {
   title: {
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
         <div className="">
           <div className="">
             {/* <Header /> */}
+            <ContactBanner />
             <Header
               quoteFormLink={quoteFormLink}
               contactLink={contactLink}
