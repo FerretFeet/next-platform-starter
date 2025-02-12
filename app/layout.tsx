@@ -30,10 +30,7 @@ export default function RootLayout({ children }) {
     >
       <head>
         <title>Fresh Greens Landscaping</title>
-        <meta
-          name="description"
-          content="Your local lawn care company in central Arkansas, we provide several lawn care services and small landscaping services.  Our weekly lawn maintenance includes lawn mowing, grass trimming, edging, and cleanup.  Currently offering same day lawn mowing, so get a free quote today"
-        />
+
         <meta
           name="description"
           content="Your trusted local lawn care company in Central Arkansas offering full lawn maintenance: lawn mowing, trimming, edging, and cleanup. Get same day lawn mowing and a free quote today!"
