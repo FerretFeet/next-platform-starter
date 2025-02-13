@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react";
 import styles from "./ServiceArea.module.css";
+import Image from "next/image";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function ServiceArea({
@@ -13,7 +14,10 @@ export default function ServiceArea({
     <div className={styles.hideOverflow}>
       <div className={`${styles.stylingContainer}`}>
         <section className={styles.container}>
-          {/* <img src={stateImg.imgLink} alt={stateImg.imgAltText} className={styles.stateImg} /> */}
+          {/* <Image
+height={240}
+width={480}
+height={240} src={stateImg.imgLink} alt={stateImg.imgAltText} className={styles.stateImg} /> */}
           <div className={styles.titleStyler}>
             <h2 className={styles.title}>Service Areas</h2>
           </div>
@@ -24,7 +28,9 @@ export default function ServiceArea({
                 className={styles.serviceAreaItem}
                 key={idx}
               >
-                <img
+                <Image
+                  height={240}
+                  width={480}
                   src="/imgs/icons/mapPin.png"
                   alt=""
                   className={styles.areaIcon}

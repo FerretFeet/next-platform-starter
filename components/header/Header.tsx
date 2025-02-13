@@ -5,6 +5,7 @@ import { DataString } from "data/__interfaces";
 import Link from "next/link";
 import React from "react";
 import styles from "./Header.module.css";
+import Image from "next/image";
 
 export default function Header({
   quoteFormLink,
@@ -67,7 +68,9 @@ export default function Header({
 
       <div className={styles.logoNav}>
         <Link href={"/"}>
-          <img
+          <Image
+            height={240}
+            width={480}
             src={logoPath}
             alt="logo"
             className={styles.logo}

@@ -1,51 +1,50 @@
 [
-    {
-        "title": "Lawn Mowing",
-        "description": "A quick, professional cut and edge to give your yard that manicured look.  Let us help you create and maintain the best looking yard on the block.",
-        "iconLink": {
-            "imgLink": "/imgs/photos/zac-gudakov-C-ytG5ZOVUs-unsplash.jpg",
-            "imgAltText": "A lawn mower."
-        }
-    },
-    {
-        "title": "Pet Waste Cleanup",
-        "description": "If you're tired of stepping in your pets' waste in your yard or of the brown spots it causes, let us know and we'll scoop it up for you!",
-        "iconLink": {
-            "imgLink": "/imgs/photos/zac-gudakov-C-ytG5ZOVUs-unsplash.jpg",
-            "imgAltText": "Some dogs"
-        }
-    },
-    {
-        "title": "Hedge Trimming",
-        "description": "Got a few overgrown hedges or ornamental trees that could use a trim?  Just need some regular maintenance to keep them pretty and healthy?  We’ve got you covered.",
-        "iconLink": {
-            "imgLink": "/imgs/photos/hedge_bush_green_nature.jpg",
-            "imgAltText": "Some trimmed hedges."
-        }
-    },
-    {
-        "title": "Mulch Application",
-        "description": "If you need some mulch placed to help control weeds, retain moisture, and regulate soil temperature for your plants, look no further.",
-        "iconLink": {
-            "imgLink": "/imgs/photos/mulch.jpg",
-            "imgAltText": ""
-        }
-    },
-    {
-        "title": "Leaf Cleanup",
-        "description": "We mulch or collect and remove leaves from your lawn and landscapes so your grass can get some sunlight and stay healthy.",
-        "iconLink": {
-            "imgLink": "/imgs/photos/ashlee-brown-mc6923EJ9kY-unsplash.jpg",
-            "imgAltText": ""
-        }
-    },
-    {
-        "title": "Ornamental Tree Trimming",
-        "description": "We recommend pruning your trees at least once a year to promote effective growth, and are happy to take care of the work and trimmings for you!",
-        "iconLink": {
-            "imgLink": "/imgs/photos/ashlee-brown-mc6923EJ9kY-unsplash.jpg",
-            "imgAltText": ""
-        }
+  {
+    "title": "Lawn Mowing",
+    "description": "Get a perfectly manicured lawn with our professional mowing service. We'll give your yard a precise cut and crisp edges, making it the envy of the neighborhood.  Let us help you create and maintain a fresh and green lawn.",
+    "iconLink": {
+      "imgLink": "/imgs/photos/lawnMowing.jpg",
+      "imgAltText": "Professional lawn mowing service"
     }
-    
+  },
+  {
+    "title": "Pet Waste Cleanup",
+    "description": "Tired of stepping in surprises?  We'll keep your yard clean and safe for you and your family with our regular pet waste removal service.  Say goodbye to brown spots and hello to a pristine lawn.",
+    "iconLink": {
+      "imgLink": "/imgs/photos/petWaste.jpg",
+      "imgAltText": "Dog playing in a clean yard"
+    }
+  },
+  {
+    "title": "Hedge Trimming & Shaping",
+    "description": "Keep your hedges and ornamental trees looking their best with our expert trimming and shaping services. We'll maintain their health and beauty, enhancing your curb appeal.",
+    "iconLink": {
+      "imgLink": "/imgs/photos/hedgetrimming.jpg",
+      "imgAltText": "Well-maintained hedges"
+    }
+  },
+  {
+    "title": "Mulch Installation",
+    "description": "Enhance your landscape and protect your plants with our mulch installation service. Mulch helps control weeds, retain moisture, and regulate soil temperature. We'll handle the heavy lifting, so you can enjoy a beautiful, healthy garden.",
+    "iconLink": {
+      "imgLink": "/imgs/photos/mulch.jpg",
+      "imgAltText": "Freshly laid mulch in a garden"
+    }
+  },
+  {
+    "title": "Leaf Removal",
+    "description": "Don't let fallen leaves smother your lawn! Our leaf removal service will keep your grass healthy and vibrant. We'll mulch or collect and remove leaves, leaving your yard clean and ready for any season.",
+    "iconLink": {
+      "imgLink": "/imgs/photos/ashlee-brown-mc6923EJ9kY-unsplash.jpg",
+      "imgAltText": "Clean yard free of leaves"
+    }
+  },
+  {
+    "title": "Flower Bed Maintenance",
+    "description": "Give your flower beds the attention they deserve.  Our delicate flower bed maintenance service includes weeding, pruning, and other essential care to keep your flowers blooming beautifully all season long.",
+    "iconLink": {
+      "imgLink": "/imgs/photos/flowerbed.jpg",
+      "imgAltText": "Thriving flower bed"
+    }
+  }
 ]

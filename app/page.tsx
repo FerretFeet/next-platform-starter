@@ -2,7 +2,7 @@ import Hero from "components/hero/Hero";
 import ServiceArea from "components/serviceArea/ServiceArea";
 import ServiceCards from "components/serviceCards/ServiceCards";
 import SimpleIHP from "components/simpleIHP/SimpleIHP";
-import Testimonials from "components/testimonials/Testimonials";
+// import Testimonials from "components/testimonials/Testimonials";
 import ValueProps from "components/valueProps/ValueProps";
 import React from "react";
 
@@ -11,9 +11,9 @@ import valuePropData from "data/valuePropositions.json";
 import serviceCardData from "data/serviceCards.json";
 import aboutUsTxt from "data/aboutUsTxt.json";
 import serviceAreas from "data/serviceAreas.json";
-import testimonialData from "data/testimonials.json";
+// import testimonialData from "data/testimonials.json";
 
-import styles from "./page.module.css";
+// import styles from "./page.module.css";
 import { CTAModule } from "components/CTAModule";
 import FormConstructor from "components/formConstructor/FormConstructor";
 
@@ -34,9 +34,9 @@ export default function Page() {
         cardInfoArr={serviceCardData}
         CTAModule={CTAModule}
       />
-      <div className={styles.testimonialGradient}>
+      {/* <div className={styles.testimonialGradient}>
         <Testimonials cardInfoArr={testimonialData} />
-      </div>
+      </div> */}
       <FormConstructor />
       <SimpleIHP
         imgLink={{ imgLink: "/", imgAltText: "a photo" }}

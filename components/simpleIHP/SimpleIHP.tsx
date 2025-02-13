@@ -3,6 +3,7 @@
 import ImgNText from "data/__interfaces";
 import React from "react";
 import styles from "./SimpleIHP.module.css";
+import Image from "next/image";
 
 export default function SimpleIHP({
   imgLink,
@@ -16,7 +17,9 @@ export default function SimpleIHP({
   return (
     <section className={`${styles.sectionContainer} ${styles.parallax} tintBg`}>
       <div className={styles.imgContainer}>
-        <img
+        <Image
+          height={240}
+          width={480}
           src={imgLink.imgLink}
           alt={imgLink.imgAltText}
           className={styles.sectionImg}

@@ -1,6 +1,7 @@
 import ImgNText from "data/__interfaces";
 import React from "react";
 import styles from "./SimpleImgCard.module.css";
+import Image from "next/image";
 
 export default function SimpleImgCard({
   title,
@@ -15,7 +16,9 @@ export default function SimpleImgCard({
     <div className={styles.simpleIconCard}>
       <div className={styles.iconContainer}>
         {/* svg or img */}
-        <img
+        <Image
+          height={240}
+          width={480}
           src={iconLink.imgLink}
           alt={iconLink.imgAltText}
           className={styles.iconImg}

@@ -15,6 +15,7 @@
   padding: 1rem;
   max-height: 300px;
   overflow: hidden;
+  position: relative;
 }
 
 .order1 {
@@ -44,8 +45,11 @@
 }
 
 .description {
+  font-size: 1.2rem;
+  line-height: 2rem;
   text-align: left;
   margin: 0.5rem auto;
+  padding: 0 15%;
 }
 
 @media screen and (min-width: 1000px) {

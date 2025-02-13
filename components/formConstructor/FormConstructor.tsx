@@ -77,6 +77,7 @@ const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:5173";
 //   return redirect("/");
 // }
 
+//@ts-expect-error dont wanna google the type
 const formAction = (e) => {
   e.preventDefault();
 

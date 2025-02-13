@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./FullsizeCard.module.css";
 import ImgNText from "data/__interfaces";
+import Image from "next/image";
 
 export default function FullsizeCard({
   title,
@@ -20,7 +21,9 @@ export default function FullsizeCard({
       </div>
       <div className={`${styles.imgContainer} ${styles.order1}`}>
         {/* svg or img */}
-        <img
+        <Image
+          height={240}
+          width={480}
           src={iconLink.imgLink}
           alt={iconLink.imgAltText}
           className={styles.iconImg}
