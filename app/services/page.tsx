@@ -20,176 +20,174 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  const jsonLdData = [
+    {
+      "@context": "https://schema.org",
 
-    const jsonLdData = [
-      {
-        "@context": "https://schema.org",
-  
-        "@type": "WebPage",
-        name: "Services - Fresh Greens Landscaping",
-        description:
-          "Local lawn care services in Central Arkansas, including lawn mowing, trimming, edging, hedge trimming, pet waste cleanup, flowerbed maintenance, and leaf cleanup. Get a free quote today!",
-        isPartOf: {
-          "@type": "WebSite", // Link to the WebSite node
+      "@type": "WebPage",
+      name: "Services - Fresh Greens Landscaping",
+      description:
+        "Local lawn care services in Central Arkansas, including lawn mowing, trimming, edging, hedge trimming, pet waste cleanup, flowerbed maintenance, and leaf cleanup. Get a free quote today!",
+      isPartOf: {
+        "@type": "WebSite", // Link to the WebSite node
+      },
+      about: {
+        "@type": "Organization", // Link to the Organization node
+      },
+      mainEntity: {
+        "@type": "LocalBusiness",
+        name: "Fresh Greens Landscaping LLC",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Ward",
+          addressRegion: "AR",
+          postalCode: "72176",
+          addressCountry: "US",
         },
-        about: {
-          "@type": "Organization", // Link to the Organization node
-        },
-        mainEntity: {
-          "@type": "LocalBusiness",
-          name: "Fresh Greens Landscaping LLC",
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "Ward",
-            addressRegion: "AR",
-            postalCode: "72176",
-            addressCountry: "US",
-          },
-          telephone: "+15015103469",
-          url: "https://freshgreenslandscaping.com",
-          serviceArea: "Ward and surrounding areas",
-          hasOfferCatalog: {
-            "@type": "OfferCatalog",
-            name: "Lawn Care Services",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                item: {
-                  "@type": "Service",
-                  name: "Lawn Mowing",
-                  description:
-                    "Get a perfectly manicured lawn with our professional mowing service. We'll give your yard a precise cut and crisp edges, making it the envy of the neighborhood. Let us help you create and maintain a fresh and green lawn.",
-                  priceSpecification: {
-                    "@type": "PriceSpecification",
-                    priceCurrency: "USD",
-                    minPrice: "45",
-                    unitText: "per visit",
-                  },
-                  potentialAction: {
-                    "@type": "Action",
-                    name: "Get a Free Quote",
-                    target: "https://www.yourwebsite.com/#QuoteForm",
-                    method: "POST",
-                  },
-                  image:
-                    "https://www.freshgreenslandscaping/imgs/photos/lawnMowing.jpg",
-                  url: "https://www.freshgreenslandscaping/services", // Add service-specific URL
+        telephone: "+15015103469",
+        url: "https://freshgreenslandscaping.com",
+        serviceArea: "Ward and surrounding areas",
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Lawn Care Services",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              item: {
+                "@type": "Service",
+                name: "Lawn Mowing",
+                description:
+                  "Get a perfectly manicured lawn with our professional mowing service. We'll give your yard a precise cut and crisp edges, making it the envy of the neighborhood. Let us help you create and maintain a fresh and green lawn.",
+                priceSpecification: {
+                  "@type": "PriceSpecification",
+                  priceCurrency: "USD",
+                  minPrice: "45",
+                  unitText: "per visit",
                 },
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                item: {
-                  "@type": "Service",
-                  name: "Pet Waste Cleanup",
-                  description:
-                    "Tired of stepping in surprises? We'll keep your yard clean and safe for you and your family with our regular pet waste removal service. Say goodbye to brown spots and hello to a pristine lawn.",
-                  priceSpecification: {
-                    "@type": "PriceSpecification",
-                    priceCurrency: "USD",
-                    minPrice: "22",
-                    unitText: "per visit",
-                  },
-                  potentialAction: {
-                    "@type": "Action",
-                    name: "Get a Free Quote",
-                    target: "https://www.yourwebsite.com/#QuoteForm",
-                    method: "POST",
-                  },
-                  image:
-                    "https://www.freshgreenslandscaping/imgs/photos/petWaste.jpg",
-                  url: "https://www.freshgreenslandscaping/services",
+                potentialAction: {
+                  "@type": "Action",
+                  name: "Get a Free Quote",
+                  target: "https://www.yourwebsite.com/#QuoteForm",
+                  method: "POST",
                 },
+                image:
+                  "https://www.freshgreenslandscaping/imgs/photos/lawnMowing.jpg",
+                url: "https://www.freshgreenslandscaping/services", // Add service-specific URL
               },
-              {
-                "@type": "ListItem",
-                position: 3,
-                item: {
-                  "@type": "Service",
-                  name: "Hedge Trimming & Shaping",
-                  description:
-                    "Keep your hedges and ornamental trees looking their best with our expert trimming and shaping services. We'll maintain their health and beauty, enhancing your curb appeal.",
-                  potentialAction: {
-                    "@type": "Action",
-                    name: "Get a Free Quote",
-                    target: "https://www.yourwebsite.com/#QuoteForm",
-                    method: "POST",
-                  },
-                  image:
-                    "https://www.freshgreenslandscaping/imgs/photos/hedgetrimming.jpg",
-                  url: "https://www.freshgreenslandscaping/services",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              item: {
+                "@type": "Service",
+                name: "Pet Waste Cleanup",
+                description:
+                  "Tired of stepping in surprises? We'll keep your yard clean and safe for you and your family with our regular pet waste removal service. Say goodbye to brown spots and hello to a pristine lawn.",
+                priceSpecification: {
+                  "@type": "PriceSpecification",
+                  priceCurrency: "USD",
+                  minPrice: "22",
+                  unitText: "per visit",
                 },
-              },
-              {
-                "@type": "ListItem",
-                position: 4,
-                item: {
-                  "@type": "Service",
-                  name: "Mulch Installation",
-                  description:
-                    "Enhance your landscape and protect your plants with our mulch installation service. Mulch helps control weeds, retain moisture, and regulate soil temperature. We'll handle the heavy lifting, so you can enjoy a beautiful, healthy garden.",
-                  potentialAction: {
-                    "@type": "Action",
-                    name: "Get a Free Quote",
-                    target: "https://www.yourwebsite.com/#QuoteForm",
-                    method: "POST",
-                  },
-                  image:
-                    "https://www.freshgreenslandscaping/imgs/photos/mulch.jpg",
-                  url: "https://www.freshgreenslandscaping/mulch-installation",
+                potentialAction: {
+                  "@type": "Action",
+                  name: "Get a Free Quote",
+                  target: "https://www.yourwebsite.com/#QuoteForm",
+                  method: "POST",
                 },
+                image:
+                  "https://www.freshgreenslandscaping/imgs/photos/petWaste.jpg",
+                url: "https://www.freshgreenslandscaping/services",
               },
-              {
-                "@type": "ListItem",
-                position: 5,
-                item: {
-                  "@type": "Service",
-                  name: "Leaf Removal",
-                  description:
-                    "Don't let fallen leaves smother your lawn! Our leaf removal service will keep your grass healthy and vibrant. We'll mulch or collect and remove leaves, leaving your yard clean and ready for any season.",
-                  priceSpecification: {
-                    "@type": "PriceSpecification",
-                    priceCurrency: "USD",
-                    minPrice: "45",
-                    unitText: "per visit",
-                  },
-                  potentialAction: {
-                    "@type": "Action",
-                    name: "Get a Free Quote",
-                    target: "https://www.yourwebsite.com/#QuoteForm",
-                    method: "POST",
-                  },
-                  image:
-                    "https://www.freshgreenslandscaping/imgs/photos/ashlee-brown-mc6923EJ9kY-unsplash.jpg", // Make sure this path is correct
-                  url: "https://www.freshgreenslandscaping/leaf-removal",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              item: {
+                "@type": "Service",
+                name: "Hedge Trimming & Shaping",
+                description:
+                  "Keep your hedges and ornamental trees looking their best with our expert trimming and shaping services. We'll maintain their health and beauty, enhancing your curb appeal.",
+                potentialAction: {
+                  "@type": "Action",
+                  name: "Get a Free Quote",
+                  target: "https://www.yourwebsite.com/#QuoteForm",
+                  method: "POST",
                 },
+                image:
+                  "https://www.freshgreenslandscaping/imgs/photos/hedgetrimming.jpg",
+                url: "https://www.freshgreenslandscaping/services",
               },
-              {
-                "@type": "ListItem",
-                position: 6,
-                item: {
-                  "@type": "Service",
-                  name: "Flower Bed Maintenance",
-                  description:
-                    "Give your flower beds the attention they deserve. Our delicate flower bed maintenance service includes weeding, pruning, and other essential care to keep your flowers blooming beautifully all season long.",
-                  potentialAction: {
-                    "@type": "Action",
-                    name: "Get a Free Quote",
-                    target: "https://www.yourwebsite.com/#QuoteForm",
-                    method: "POST",
-                  },
-                  image:
-                    "https://www.freshgreenslandscaping/imgs/photos/flowerbed.jpg",
-                  url: "https://www.freshgreenslandscaping/flower-bed-maintenance",
+            },
+            {
+              "@type": "ListItem",
+              position: 4,
+              item: {
+                "@type": "Service",
+                name: "Mulch Installation",
+                description:
+                  "Enhance your landscape and protect your plants with our mulch installation service. Mulch helps control weeds, retain moisture, and regulate soil temperature. We'll handle the heavy lifting, so you can enjoy a beautiful, healthy garden.",
+                potentialAction: {
+                  "@type": "Action",
+                  name: "Get a Free Quote",
+                  target: "https://www.yourwebsite.com/#QuoteForm",
+                  method: "POST",
                 },
+                image:
+                  "https://www.freshgreenslandscaping/imgs/photos/mulch.jpg",
+                url: "https://www.freshgreenslandscaping/mulch-installation",
               },
-            ],
-          },
+            },
+            {
+              "@type": "ListItem",
+              position: 5,
+              item: {
+                "@type": "Service",
+                name: "Leaf Removal",
+                description:
+                  "Don't let fallen leaves smother your lawn! Our leaf removal service will keep your grass healthy and vibrant. We'll mulch or collect and remove leaves, leaving your yard clean and ready for any season.",
+                priceSpecification: {
+                  "@type": "PriceSpecification",
+                  priceCurrency: "USD",
+                  minPrice: "45",
+                  unitText: "per visit",
+                },
+                potentialAction: {
+                  "@type": "Action",
+                  name: "Get a Free Quote",
+                  target: "https://www.yourwebsite.com/#QuoteForm",
+                  method: "POST",
+                },
+                image:
+                  "https://www.freshgreenslandscaping/imgs/photos/ashlee-brown-mc6923EJ9kY-unsplash.jpg", // Make sure this path is correct
+                url: "https://www.freshgreenslandscaping/leaf-removal",
+              },
+            },
+            {
+              "@type": "ListItem",
+              position: 6,
+              item: {
+                "@type": "Service",
+                name: "Flower Bed Maintenance",
+                description:
+                  "Give your flower beds the attention they deserve. Our delicate flower bed maintenance service includes weeding, pruning, and other essential care to keep your flowers blooming beautifully all season long.",
+                potentialAction: {
+                  "@type": "Action",
+                  name: "Get a Free Quote",
+                  target: "https://www.yourwebsite.com/#QuoteForm",
+                  method: "POST",
+                },
+                image:
+                  "https://www.freshgreenslandscaping/imgs/photos/flowerbed.jpg",
+                url: "https://www.freshgreenslandscaping/flower-bed-maintenance",
+              },
+            },
+          ],
         },
       },
-    ];
-  };
+    },
+  ];
   return (
     <div className="">
       <script
