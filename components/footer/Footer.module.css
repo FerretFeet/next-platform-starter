@@ -1,0 +1,45 @@
+.container {
+  /* background-color: var(--white); */
+  background-image: linear-gradient(
+    var(--primary-color),
+    70%,
+    var(--tertiary-color) 85%
+  );
+  display: flex;
+  gap: 5rem;
+  padding: 5rem 25%;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.titleBlurb {
+  min-width: fit-content;
+  font-size: 1.25rem;
+}
+
+.logoNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2rem;
+  gap: 4rem;
+}
+
+.logoNav > nav {
+  margin-left: 5rem;
+}
+
+.logoNav > nav > ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.logo {
+  width: clamp(160px, 12rem, 238px);
+}
+
+@media screen and (max-width: 700px) {
+  .contactBanner {
+    flex-direction: column;
+  }
+}

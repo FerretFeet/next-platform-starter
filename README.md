@@ -18,7 +18,7 @@
 - form client-side validation
 - accessability -arialabels, -form id labels -keyboard controls -
 - performance -webp -image file sizes
-- seo -robots.txt, keywords, google other ideas?
+- seo -robots.txt, keywords, google other ideas? AI to jsonLD ?
 - ensure static site? getStaticProps getStaticPaths
 
 # --------

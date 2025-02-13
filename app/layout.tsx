@@ -5,6 +5,7 @@ import React from "react";
 
 import links from "data/links.json";
 import ContactBanner from "components/contactBanner/ContactBanner";
+import Footer from "components/footer/Footer";
 
 export const metadata = {
   title: {
@@ -57,7 +58,13 @@ export default function RootLayout({ children }) {
               excludedNavLinkKeys={["Get An Estimate", "Contact Us", "Phone"]}
             />
             <div className="">{children}</div>
-            {/* <Footer /> */}
+            <Footer
+              contactLink={contactLink}
+              contactPhone={contactPhone}
+              logoPath="/imgs/icons/logo.png"
+              navLinks={links}
+              excludedNavLinkKeys={["Get An Estimate", "Contact Us", "Phone"]}
+            />
           </div>
         </div>
       </body>
