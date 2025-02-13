@@ -50,37 +50,6 @@ interface FormState {
 
 const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:5173";
 
-// export async function formAction({ request }) {
-//   // REQUIRES WORK
-//   //
-//   // ###############
-//   //
-//   // REQUIRES WORK
-//   const formData = await request.formData();
-//   console.log(baseUrl);
-//   const response = await fetch(`${baseUrl}`, {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/x-www-form-urlencoded",
-//     },
-//     body: new URLSearchParams({
-//       "form-name": "estimateForm v1",
-//       fname: String(formData.get("fname")),
-//       lname: String(formData.get("lname")),
-//       phone: String(formData.get("phone")),
-//       email: String(formData.get("email")),
-//       address: String(formData.get("address")),
-//       city: String(formData.get("city")),
-//       zipcode: String(formData.get("zipcode")),
-
-//       subject: String(formData.get("services")),
-//       additionalNotes: String(formData.get("additionalNotes")),
-//     }).toString(),
-//   });
-//   console.log(response);
-//   return redirect("/");
-// }
-
 //@ts-expect-error dont wanna google the type
 const formAction = (e) => {
   e.preventDefault();
@@ -107,7 +76,6 @@ export default function FormConstructor() {
   const [state, setState] = useState<FormState>({
     fname: "",
     lname: "",
-
     phone: "",
     email: "",
     address: "",
@@ -240,20 +208,32 @@ export default function FormConstructor() {
     if (inputType == "textarea") {
       return (
         <div className={styles.createdLabelInputCont}>
-          <label htmlFor={formField}>{labelText}</label>
+          <label
+            id={formField}
+            htmlFor={formField}
+          >
+            {labelText}
+          </label>
           <textarea
             name={formField}
             placeholder={placeHolder}
             value={value}
             onChange={changeHandler}
             required={required}
+            aria-required={required}
+            aria-describedby={formField}
           />
         </div>
       );
     }
     return (
       <div className={styles.createdLabelInputCont}>
-        <label htmlFor={formField}>{labelText}</label>
+        <label
+          id={formField}
+          htmlFor={formField}
+        >
+          {labelText}
+        </label>
         <input
           type={inputType}
           name={formField}
@@ -261,6 +241,8 @@ export default function FormConstructor() {
           value={value}
           onChange={changeHandler}
           required={required}
+          aria-required={required}
+          aria-describedby={formField}
         />
       </div>
     );
@@ -288,8 +270,12 @@ export default function FormConstructor() {
                 name={formField}
                 value={val.value}
                 onChange={changeHandler}
+                id={formField}
               />
-              <label htmlFor={formField}>
+              <label
+                htmlFor={formField}
+                aria-describedby={formField}
+              >
                 {selectOptionsArr.at(idx)?.text}
               </label>
             </div>
