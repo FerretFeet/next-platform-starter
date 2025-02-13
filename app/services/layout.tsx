@@ -31,11 +31,6 @@ export default function RootLayout({ children }) {
       data-theme="lofi"
     >
       <head>
-        <title>Fresh Greens Services</title>
-        <meta
-          name="description"
-          content="Local lawn care services in Central Arkansas, including lawn mowing, trimming, edging, hedge trimming, pet waste cleanup, flowerbed maintenance, and leaf cleanup. Get a free quote today!"
-        />
         <link
           rel="icon"
           href="/favicon.svg"

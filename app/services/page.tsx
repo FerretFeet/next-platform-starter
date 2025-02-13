@@ -8,13 +8,21 @@ import FullsizeCard1 from "components/fullsizeCard/FullsizeCard1";
 import FullsizeCard2 from "components/fullsizeCard/FullsizeCard2";
 import styles from "./page.module.css";
 
-import testimonialData from "data/testimonials.json";
-import Testimonials from "components/testimonials/Testimonials";
+// import testimonialData from "data/testimonials.json";
+// import Testimonials from "components/testimonials/Testimonials";
 import { CTAModule } from "components/CTAModule";
+import Head from "next/head";
 
 export default function Page() {
   return (
     <div className="">
+      <Head>
+        <title>Fresh Greens Services</title>
+        <meta
+          name="description"
+          content="Local lawn care services in Central Arkansas, including lawn mowing, trimming, edging, hedge trimming, pet waste cleanup, flowerbed maintenance, and leaf cleanup. Get a free quote today!"
+        />
+      </Head>
       <Hero
         h1text={heroTxt.h1text}
         description={heroTxt.description}
@@ -61,8 +69,8 @@ export default function Page() {
       {/* <h2 className={styles.quoteformHeader}>Get Your Free Quote</h2> */}
       {/* <FormConstructor /> */}
 
-      <h2 className={styles.testimonialHeader}>Testimonials</h2>
-      <Testimonials cardInfoArr={testimonialData} />
+      {/* <h2 className={styles.testimonialHeader}>Testimonials</h2> */}
+      {/* <Testimonials cardInfoArr={testimonialData} /> */}
       <div className={styles.ctaContainer2}>
         <CTAModule />
       </div>

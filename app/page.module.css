@@ -1,7 +1,0 @@
-.testimonialGradient {
-  background-image: linear-gradient(
-    var(--tertiary-color),
-    30%,
-    var(--white) 80%
-  );
-}
