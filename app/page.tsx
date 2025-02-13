@@ -78,7 +78,7 @@ export default function Page() {
                   method: "POST",
                 },
                 image:
-                  "https://www.freshgreenslandscaping/imgs/photos/lawnMowing.jpg",
+                  "https://www.freshgreenslandscaping/imgs/photos/lawnMowing.webp",
                 url: "https://www.freshgreenslandscaping/services", // Add service-specific URL
               },
             },
@@ -103,7 +103,7 @@ export default function Page() {
                   method: "POST",
                 },
                 image:
-                  "https://www.freshgreenslandscaping/imgs/photos/petWaste.jpg",
+                  "https://www.freshgreenslandscaping/imgs/photos/petWaste.webp",
                 url: "https://www.freshgreenslandscaping/services",
               },
             },
@@ -122,7 +122,7 @@ export default function Page() {
                   method: "POST",
                 },
                 image:
-                  "https://www.freshgreenslandscaping/imgs/photos/hedgetrimming.jpg",
+                  "https://www.freshgreenslandscaping/imgs/photos/hedgetrimming.webp",
                 url: "https://www.freshgreenslandscaping/services",
               },
             },
@@ -141,7 +141,7 @@ export default function Page() {
                   method: "POST",
                 },
                 image:
-                  "https://www.freshgreenslandscaping/imgs/photos/mulch.jpg",
+                  "https://www.freshgreenslandscaping/imgs/photos/mulch.webp",
                 url: "https://www.freshgreenslandscaping/mulch-installation",
               },
             },
@@ -166,7 +166,7 @@ export default function Page() {
                   method: "POST",
                 },
                 image:
-                  "https://www.freshgreenslandscaping/imgs/photos/ashlee-brown-mc6923EJ9kY-unsplash.jpg", // Make sure this path is correct
+                  "https://www.freshgreenslandscaping/imgs/photos/ashlee-brown-mc6923EJ9kY-unsplash.webp", // Make sure this path is correct
                 url: "https://www.freshgreenslandscaping/leaf-removal",
               },
             },
@@ -185,7 +185,7 @@ export default function Page() {
                   method: "POST",
                 },
                 image:
-                  "https://www.freshgreenslandscaping/imgs/photos/flowerbed.jpg",
+                  "https://www.freshgreenslandscaping/imgs/photos/flowerbed.webp",
                 url: "https://www.freshgreenslandscaping/flower-bed-maintenance",
               },
             },

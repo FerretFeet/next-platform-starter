@@ -3,7 +3,7 @@
     "title": "Dedicated Work Ethic",
     "description": "We're committed to doing the job right every time.  Our team is reliable, efficient, and takes pride in delivering exceptional lawn care results.",
     "iconLink": {
-      "imgLink": "/imgs/icons/worker.png",
+      "imgLink": "/imgs/icons/worker.webp",
       "imgAltText": "Icon of a hard-working person"
     }
   },
@@ -11,7 +11,7 @@
     "title": "100% Satisfaction Guaranteed",
     "description": "Your satisfaction is our top priority. If you're not happy with our service, we'll return promptly to make it right – no questions asked. That's our promise.",
     "iconLink": {
-      "imgLink": "/imgs/icons/like.png",
+      "imgLink": "/imgs/icons/like.webp",
       "imgAltText": "Thumbs-up icon"
     }
   },
@@ -19,7 +19,7 @@
     "title": "Customized Lawn Care Plans",
     "description": "We understand that every lawn is unique. Whether you're aiming for HOA compliance or the best lawn on the block, we'll work with you to create a personalized lawn care plan tailored to your specific needs and budget.",
     "iconLink": {
-      "imgLink": "/imgs/icons/home.png",
+      "imgLink": "/imgs/icons/home.webp",
       "imgAltText": "Icon of a house"
     }
   }

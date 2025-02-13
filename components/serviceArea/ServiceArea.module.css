@@ -3,7 +3,7 @@
 }
 
 .stylingContainer {
-  background-image: url(/imgs/photos/hedge_bush_green_nature.jpg);
+  background-image: url(/imgs/photos/hedge_bush_green_nature.webp);
   background-position: center;
   height: fit-content;
   /* width set to 110% to hide box-shadow on left&right. coupled with .hideOverflow */
@@ -32,7 +32,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/imgs/icons/map1.png);
+  background-image: url(/imgs/icons/map1.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

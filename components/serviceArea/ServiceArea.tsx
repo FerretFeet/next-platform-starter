@@ -31,7 +31,7 @@ height={240} src={stateImg.imgLink} alt={stateImg.imgAltText} className={styles.
                 <Image
                   height={240}
                   width={480}
-                  src="/imgs/icons/mapPin.png"
+                  src="/imgs/icons/mapPin.webp"
                   alt=""
                   className={styles.areaIcon}
                 />

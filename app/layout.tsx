@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       "@type": "Organization",
       name: "Fresh Greens Landscaping LLC",
       url: "https://freshgreenslandscaping.com",
-      logo: "https://freshgreenslandscaping.com/imgs/icons/logo.png",
+      logo: "https://freshgreenslandscaping.com/imgs/icons/logo.webp",
       telephone: "+15015103469",
       email: "BrandonW@freshgreenslandscaping.com",
       address: {
@@ -82,7 +82,7 @@ export default function RootLayout({ children }) {
               quoteFormLink={quoteFormLink}
               contactLink={contactLink}
               contactPhone={contactPhone}
-              logoPath="/imgs/icons/logo.png"
+              logoPath="/imgs/icons/logo.webp"
               navLinks={links}
               excludedNavLinkKeys={["Get An Estimate", "Contact Us", "Phone"]}
             />
@@ -90,7 +90,7 @@ export default function RootLayout({ children }) {
             <Footer
               contactLink={contactLink}
               contactPhone={contactPhone}
-              logoPath="/imgs/icons/logo.png"
+              logoPath="/imgs/icons/logo.webp"
               navLinks={links}
               excludedNavLinkKeys={["Get An Estimate", "Contact Us", "Phone"]}
             />
