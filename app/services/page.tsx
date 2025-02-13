@@ -14,13 +14,27 @@ import { CTAModule } from "components/CTAModule";
 import Head from "next/head";
 
 export default function Page() {
+  const jsonLdData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Services - Fresh Greens Landscaping",
+    description:
+      "Local lawn care services in Central Arkansas, including lawn mowing, trimming, edging, hedge trimming, pet waste cleanup, flowerbed maintenance, and leaf cleanup. Get a free quote today!",
+    url: "https://freshgreenslandscaping.com/services",
+  };
   return (
     <div className="">
       <Head>
-        <title>Fresh Greens Services</title>
+        <title>Services - Fresh Greens Landscaping</title>
         <meta
           name="description"
           content="Local lawn care services in Central Arkansas, including lawn mowing, trimming, edging, hedge trimming, pet waste cleanup, flowerbed maintenance, and leaf cleanup. Get a free quote today!"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLdData),
+          }}
         />
       </Head>
       <Hero

@@ -15,6 +15,11 @@
 - footer
 - style form button
 - make/find new form background img
+- form client-side validation
+- accessability -arialabels, -form id labels -keyboard controls -
+- performance -webp -image file sizes
+- seo -robots.txt, keywords, google other ideas?
+- ensure static site? getStaticProps getStaticPaths
 
 # --------
 
