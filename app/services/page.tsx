@@ -20,8 +20,20 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  const jsonLdData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Services - Fresh Greens Landscaping",
+    description:
+      "Local lawn care services in Central Arkansas, including lawn mowing, trimming, edging, hedge trimming, pet waste cleanup, flowerbed maintenance, and leaf cleanup. Get a free quote today!",
+    url: "https://freshgreenslandscaping.com/services",
+  };
   return (
     <div className="">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+      />
       <Hero
         h1text={heroTxt.h1text}
         description={heroTxt.description}
