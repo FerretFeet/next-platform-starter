@@ -17,9 +17,8 @@
 - make/find new form background img
 - ~~form client-side validation~~
 - accessability -arialabels, ~~-form id labels~~ -keyboard controls -
-- performance -webp -image file sizes
-- seo -robots.txt, keywords, google other ideas? AI to jsonLD ?
-- ensure static site? getStaticProps getStaticPaths
+- performance ~~-webp -image file sizes~~ -biggest photos: hedge-bush-green-nature, homehero, beautiful-home-1
+- seo -robots.txt, keywords, google other ideas? ~~AI to jsonLD ?~~
 
 # --------
 

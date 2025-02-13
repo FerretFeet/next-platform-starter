@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       url: "https://freshgreenslandscaping.com",
       logo: "https://freshgreenslandscaping.com/imgs/icons/logo.webp",
       telephone: "+15015103469",
-      email: "BrandonW@freshgreenslandscaping.com",
+      email: "brandonw@freshgreenslandscaping.com",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Ward",
