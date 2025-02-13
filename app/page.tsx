@@ -166,7 +166,7 @@ export default function Page() {
                   method: "POST",
                 },
                 image:
-                  "https://www.freshgreenslandscaping/imgs/photos/ashlee-brown-mc6923EJ9kY-unsplash.webp", // Make sure this path is correct
+                  "https://www.freshgreenslandscaping/imgs/photos/leaves.webp", // Make sure this path is correct
                 url: "https://www.freshgreenslandscaping/leaf-removal",
               },
             },
