@@ -15,6 +15,31 @@ export const metadata = {
 };
 //@ts-expect-error don't want to type this rn
 export default function RootLayout({ children }) {
+  const jsonLdData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Fresh Greens Landscaping LLC",
+      url: "https://freshgreenslandscaping.com",
+      logo: "https://freshgreenslandscaping.com/imgs/icons/logo.png",
+      telephone: "+15015103469",
+      email: "BrandonW@freshgreenslandscaping.com",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Ward",
+        addressRegion: "AR",
+        postalCode: "72176",
+        addressCountry: "US",
+      },
+      sameAs: ["https://www.facebook.com/61571059823543"],
+    },
+    {
+      "@type": "Website",
+      name: "Fresh Greens Landscaping",
+      url: "https://freshgreenslandscaping.com",
+    },
+  ];
+
   const quoteFormLink: DataString = {
     key: "Get An Estimate",
     value: links["Get An Estimate"],
@@ -45,6 +70,10 @@ export default function RootLayout({ children }) {
         <meta charSet="UTF-8" />
       </head>
       <body className="">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
         <div className="">
           <div className="">
             {/* <Header /> */}
