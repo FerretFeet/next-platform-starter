@@ -31,7 +31,10 @@ export default function RootLayout({ children }) {
         postalCode: "72176",
         addressCountry: "US",
       },
-      sameAs: ["https://www.facebook.com/61571059823543"],
+      sameAs: [
+        "https://www.facebook.com/61571059823543",
+        "https://nextdoor.com/pages/fresh-greens-landscaping-ward-ar/",
+      ],
     },
     {
       "@type": "Website",
