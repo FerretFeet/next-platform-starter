@@ -6,6 +6,22 @@
 
 <li><b>Same-Day Service:</b> Contact us before 2 p.m. for same-day service!</li>
 
+# --------
+
+# TO DO
+
+# --------
+
+- footer
+- style form button
+- make/find new form background img
+
+# --------
+
+# --------
+
+# --------
+
 # Next.js on Netlify Platform Starter
 
 [Live Demo](https://nextjs-platform-starter.netlify.app/)
