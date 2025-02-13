@@ -28,7 +28,9 @@ export const metadata: Metadata = {
 export default function Page() {
   const jsonLdData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
+    "@type": "webSite",
+    telephone: "+15015103469",
+    email: "BrandonW@freshgreenslandscaping.com",
     name: "Fresh Greens Landscaping",
     description:
       "Your trusted local lawn care company in Central Arkansas offering full lawn maintenance: lawn mowing, trimming, edging, and cleanup. Get same day lawn mowing and a free quote today!",

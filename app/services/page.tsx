@@ -22,11 +22,13 @@ export const metadata: Metadata = {
 export default function Page() {
   const jsonLdData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
+    "@type": "product",
     name: "Services - Fresh Greens Landscaping",
     description:
       "Local lawn care services in Central Arkansas, including lawn mowing, trimming, edging, hedge trimming, pet waste cleanup, flowerbed maintenance, and leaf cleanup. Get a free quote today!",
     url: "https://freshgreenslandscaping.com/services",
+    telephone: "+15015103469",
+    email: "BrandonW@freshgreenslandscaping.com",
   };
   return (
     <div className="">
