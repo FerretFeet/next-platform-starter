@@ -16,32 +16,18 @@ import serviceAreas from "data/serviceAreas.json";
 // import styles from "./page.module.css";
 import { CTAModule } from "components/CTAModule";
 import FormConstructor from "components/formConstructor/FormConstructor";
-import Head from "next/head";
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Fresh Greens Landscaping",
+  description:
+    "Your trusted local lawn care company in Central Arkansas offering full lawn maintenance: lawn mowing, trimming, edging, and cleanup. Get same day lawn mowing and a free quote today!",
+};
 
 export default function Page() {
-  const jsonLdData = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    name: "Fresh Greens Landscaping",
-    description:
-      "Your trusted local lawn care company in Central Arkansas offering full lawn maintenance: lawn mowing, trimming, edging, and cleanup. Get same day lawn mowing and a free quote today!",
-    url: "https://freshgreenslandscaping.com",
-  };
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <Head>
-        <title>Fresh Greens Landscaping</title>
-        <meta
-          name="description"
-          content="Your trusted local lawn care company in Central Arkansas offering full lawn maintenance: lawn mowing, trimming, edging, and cleanup. Get same day lawn mowing and a free quote today!"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLdData),
-          }}
-        />
-      </Head>
       <Hero
         h1text={heroTxt.h1text}
         description={heroTxt.description}

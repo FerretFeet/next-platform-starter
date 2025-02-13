@@ -29,12 +29,12 @@ export default function RootLayout({ children }) {
       data-theme="lofi"
     >
       <head>
-        <title>Fresh Greens Landscaping</title>
+        {/* <title>Fresh Greens Landscaping</title>
 
         <meta
           name="description"
           content="Your trusted local lawn care company in Central Arkansas offering full lawn maintenance: lawn mowing, trimming, edging, and cleanup. Get same day lawn mowing and a free quote today!"
-        />
+        /> */}
 
         <link
           rel="icon"
