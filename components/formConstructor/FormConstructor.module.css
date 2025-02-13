@@ -75,6 +75,35 @@ CLASS NOT APPEARING IN HTML?
   padding: 0.5rem;
 }
 
+.submitButton {
+  padding: 1rem 1.75rem;
+  font-size: 1.23rem;
+  border-radius: 16px;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  font-weight: bold;
+  height: fit-content;
+  align-self: center;
+}
+
+.submitButton:hover {
+  text-decoration: underline;
+  /* Following lines cause button to resize, messing with ui. set fixed width when using module */
+  /* font-style: italic;
+      font-size: 1.05em; */
+}
+
+.submitButton div {
+  transition: transform 0.14s ease;
+}
+
+.submitButton:hover div {
+  transform: perspective(100px) scale(1.05);
+}
+.submitButton:active div {
+  transform: perspective(100px) scale(1.08);
+}
+
 @media screen and (min-width: 100rem) {
   .formContainer {
     grid-template-columns: 1fr 1fr;

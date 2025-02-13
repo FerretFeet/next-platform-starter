@@ -18,6 +18,9 @@ export interface LabelInput {
   value: string;
   changeHandler: ChangeEventHandler;
   required: boolean;
+  minimum?: number;
+  maximum?: number;
+  pattern?: number;
 }
 
 export interface CheckboxInput {
@@ -25,6 +28,7 @@ export interface CheckboxInput {
   formField: string;
   selectOptionsArr: Array<Value_Text>;
   changeHandler: ChangeEventHandler;
+  maximum?: number;
 }
 
 export interface Value_Text {
@@ -134,6 +138,7 @@ export default function FormConstructor() {
       labelText: "First Name",
       inputType: "text",
       placeHolder: "First Name",
+      maximum: 32,
       value: state.fname,
       changeHandler: onChangeHandler,
       required: true,
@@ -143,6 +148,7 @@ export default function FormConstructor() {
       labelText: "Last Name",
       inputType: "text",
       placeHolder: "Last Name",
+      maximum: 32,
       value: state.lname,
       changeHandler: onChangeHandler,
       required: true,
@@ -152,6 +158,8 @@ export default function FormConstructor() {
       labelText: "Phone Number",
       inputType: "tel",
       placeHolder: "555-123-4567",
+      maximum: 15,
+      minimum: 10,
       value: state.phone,
       changeHandler: onChangeHandler,
       required: true,
@@ -161,6 +169,7 @@ export default function FormConstructor() {
       labelText: "Email Address",
       inputType: "email",
       placeHolder: "yourname@email.com",
+      maximum: 120,
       value: state.email,
       changeHandler: onChangeHandler,
       required: true,
@@ -170,6 +179,7 @@ export default function FormConstructor() {
       labelText: "Address",
       inputType: "text",
       placeHolder: "123 Elm St.",
+      maximum: 120,
       value: state.address,
       changeHandler: onChangeHandler,
       required: true,
@@ -179,6 +189,7 @@ export default function FormConstructor() {
       labelText: "City",
       inputType: "text",
       placeHolder: "",
+      maximum: 120,
       value: state.city,
       changeHandler: onChangeHandler,
       required: true,
@@ -188,6 +199,8 @@ export default function FormConstructor() {
       labelText: "Zipcode",
       inputType: "text",
       placeHolder: "",
+      minimum: 5,
+      maximum: 12,
       value: state.zipcode,
       changeHandler: onChangeHandler,
       required: true,
@@ -197,6 +210,7 @@ export default function FormConstructor() {
       labelText: "Additional Notes",
       inputType: "textarea",
       placeHolder: "Enter Additional Notes or Questions",
+      maximum: 1000,
       value: state.additionalNotes,
       changeHandler: onChangeHandler,
       required: false,
@@ -314,7 +328,12 @@ export default function FormConstructor() {
 
         {createCheckboxLabelInput(formCheckboxFields[0])}
         {createLabelInput(formTextFields[7])}
-        <button type="submit">Submit</button>
+        <button
+          className={styles.submitButton}
+          type="submit"
+        >
+          <div className="">Submit</div>
+        </button>
       </form>
     </section>
   );
