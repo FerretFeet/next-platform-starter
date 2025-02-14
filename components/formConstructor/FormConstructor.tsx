@@ -48,7 +48,7 @@ interface FormState {
   additionalNotes: string;
 }
 
-// const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:5173";
+const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:5173";
 
 //@ts-expect-error dont wanna google the type
 const formAction = (e) => {
@@ -56,18 +56,22 @@ const formAction = (e) => {
 
   const myForm = e.target;
   const formData = new FormData(myForm);
-
+  let success: boolean = false;
   fetch("/quoteform.html", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     //@ts-expect-error dont wanna worry about it
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => console.log("Form successfully submitted"))
     .then(() => {
-      return redirect("/success");
+      success = true;
+      console.log("Form successfully submitted");
     })
-    .catch((error) => alert(error));
+
+    .catch((error) => alert(error))
+    .finally(() => {
+      if (success == true) return redirect("/success");
+    });
 };
 
 // Allows for easier creation of form inputs
