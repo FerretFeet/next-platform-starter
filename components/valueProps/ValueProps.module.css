@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
-  padding: 5rem;
+  padding: 2.5rem 5rem;
   background-image: linear-gradient(
     var(--tertiary-color),
     30%,
