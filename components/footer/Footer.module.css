@@ -17,6 +17,10 @@
   font-size: 1.25rem;
 }
 
+.titleBlurb > a {
+  overflow-wrap: anywhere;
+}
+
 .logoNav {
   display: flex;
   flex-direction: row;
@@ -26,7 +30,7 @@
 }
 
 .logoNav > nav {
-  margin-left: 5rem;
+  /* margin-left: 5rem; */
 }
 
 .logoNav > nav > ul {
