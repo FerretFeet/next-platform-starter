@@ -27,9 +27,9 @@
   background-size: cover;
 }
 
-.container > * {
-  /* margin: 2rem; */
-}
+/* .container > * {
+  margin: 2rem;
+} */
 
 .tagLine {
   font-weight: bold;
@@ -58,12 +58,12 @@
   z-index: 5;
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .styleContainer {
-    /* flex-direction: row; */
-    /* gap: 10rem; */
+    flex-direction: row;
+    gap: 10rem;
   }
-}
+} */
 
 @media screen and (min-width: 1600px) {
   .styleContainer {

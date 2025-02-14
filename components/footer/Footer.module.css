@@ -29,9 +29,9 @@
   gap: 4rem;
 }
 
-.logoNav > nav {
-  /* margin-left: 5rem; */
-}
+/* .logoNav > nav {
+  margin-left: 5rem;
+} */
 
 .logoNav > nav > ul {
   display: flex;
