@@ -48,7 +48,7 @@ interface FormState {
   additionalNotes: string;
 }
 
-const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:5173";
+// const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:5173";
 
 //@ts-expect-error dont wanna google the type
 const formAction = (e) => {
@@ -65,7 +65,7 @@ const formAction = (e) => {
   })
     .then(() => console.log("Form successfully submitted"))
     .then(() => {
-      return redirect("/");
+      return redirect("/success");
     })
     .catch((error) => alert(error));
 };
