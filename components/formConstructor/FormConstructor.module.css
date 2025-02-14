@@ -1,10 +1,7 @@
 .mainCont {
   width: fit-content;
-  padding: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 2.5rem;
+  margin: 2.5rem auto;
   display: grid;
   border: 8px solid var(--primary-color);
   border-radius: 8px;
@@ -22,14 +19,12 @@
 }
 
 .formContainer {
-  padding: 2rem;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   /* flex-wrap: wrap; */
   /* flex-direction: column; */
   width: fit-content;
-  margin: 5rem;
   gap: 2.5rem;
 }
 
@@ -115,7 +110,5 @@ CLASS NOT APPEARING IN HTML?
 }
 
 .createdLabelInputCont > textarea {
-  width: 30rem;
-  height: 5rem;
   resize: none;
 }
