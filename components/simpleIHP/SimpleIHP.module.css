@@ -1,34 +1,34 @@
 .sectionContainer {
   background-image: url(/imgs/photos/beautiful-home-1-bg.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: auto;
+  background-repeat: repeat;
   background-position: center;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   /* padding must be negated in img container */
-  padding: 10rem;
+  padding: 0 2.5rem 2.5rem;
   gap: 3rem;
 }
 
 .parallax {
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (min-device-width: 1366px) {
   .parallax {
-    background-attachment: scroll;
+    background-attachment: fixed;
+  }
+  .sectionContainer {
+    background-repeat: no-repeat;
   }
 }
 
 .imgContainer {
-  /* negate padding of sectionContainer */
-  padding: -10rem;
 }
 
 /* .sectionImg {
@@ -44,8 +44,8 @@
   width: 60%;
   white-space: pre;
   text-wrap: wrap;
-  font-size: 1.5rem;
-  text-align: justify;
+  /* font-size: 1.5rem; */
+  /* text-align: justify; */
   position: relative;
   z-index: 5;
   background-color: var(--trans-black);
