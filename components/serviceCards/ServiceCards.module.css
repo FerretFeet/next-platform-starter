@@ -22,8 +22,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 5rem;
-  width: 80%;
+  padding: 5rem 10%;
+  /* width: 80%; */
   margin: auto;
 }
 
