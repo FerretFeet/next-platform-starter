@@ -64,6 +64,9 @@ const formAction = (e) => {
     body: new URLSearchParams(formData).toString(),
   })
     .then(() => console.log("Form successfully submitted"))
+    .then(() => {
+      return redirect("/");
+    })
     .catch((error) => alert(error));
 };
 
