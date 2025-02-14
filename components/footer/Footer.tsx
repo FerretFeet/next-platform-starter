@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import createLinksAndNav from "components/createLinksAndNav";
+import createLinksAndNav from "components/createLinksandNav/createLinksAndNav";
 import LinkButton from "components/link_button/LinkButton";
 import { DataString } from "data/__interfaces";
 import Link from "next/link";
