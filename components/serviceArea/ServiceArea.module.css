@@ -80,7 +80,7 @@
   padding: 1.5rem;
   /* font-size: 2rem; */
   /* margin-top: -3rem; */
-  /* z-index: 50; */
+  z-index: 50;
 }
 
 @media screen and (min-width: 1000px) {
