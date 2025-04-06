@@ -70,6 +70,11 @@ export default function RootLayout({ children }) {
           href="/favicon.svg"
           sizes="any"
         />
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="iB1d8xD49yUIkkwYyN/d8g"
+          async
+        ></script>
         <meta charSet="UTF-8" />
       </head>
       <body className="">
